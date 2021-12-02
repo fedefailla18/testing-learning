@@ -58,7 +58,7 @@ build/
 
 ### REACT APP ###
 # dependencies
-
+/node_modules
 /.pnp
 .pnp.js
 
