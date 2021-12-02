@@ -21,7 +21,7 @@ class App extends Component{
           console.log(response);
           this.setState({numberOfUsers: this.state.numberOFUsers+1})
         })
-    this.setState({users: {}})
+    this.setState({users: []})
   }
 
   getAllUsers = () => {
@@ -31,6 +31,7 @@ class App extends Component{
           this.setState({users: users, numberOfUsers: users.length})
         })
   }
+
   onChangeForm = (e) => {
     let user = this.state.user
     if (e.target.name === 'firstname') {
