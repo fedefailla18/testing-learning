@@ -56,17 +56,19 @@ build/
 ### VS Code ###
 .vscode/
 
+#################
 ### REACT APP ###
+#################
 # dependencies
-/node_modules
-/.pnp
+/src/main/ui/node_modules
+/src/main/ui/.pnp
 .pnp.js
 
 # testing
-/coverage
+/src/main/ui/coverage
 
 # production
-/build
+/src/main/ui/build
 
 # misc
 .DS_Store
