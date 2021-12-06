@@ -1,4 +1,4 @@
-package com.helper.work.calculator;
+package com.helper.work.courses.calculator;
 
 public class PowerOf extends CalculateBase implements MathProcessing {
 
