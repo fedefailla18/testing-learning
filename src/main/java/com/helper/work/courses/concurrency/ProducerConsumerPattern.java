@@ -11,12 +11,17 @@ public class ProducerConsumerPattern {
     int count = 0;
     int[] buffer = new int[BUFFER_SIZE];
 
-    class Producer {
-        public void producer() {
-            while (isFull(buffer)) {
+    private Object lock;
 
+    class Producer {
+        public void producer() throws InterruptedException {
+            synchronized (lock) {
+                if (isFull(buffer)) {
+                    lock.wait();
+                }
+                buffer[count++] = 1;
+                lock.notifyAll();
             }
-            buffer[count++] = 1;
         }
 
         private boolean isFull(int[] buffer) {
@@ -25,11 +30,14 @@ public class ProducerConsumerPattern {
     }
 
     class Consumer {
-        public void consumer() {
-            while (isEmpty(buffer)) {
-
+        public void consumer() throws InterruptedException {
+            synchronized (lock) {
+                if (isEmpty(buffer)) {
+                    lock.wait();
+                }
+                buffer[--count] = 0;
+lock.notifyAll();
             }
-            buffer[--count] = 0;
         }
     }
 }
