@@ -1,7 +1,7 @@
-package com.helper.work.courses.concurrency.demo;
+package com.helper.work.courses.completablefuture.demo;
 
-import com.helper.work.courses.concurrency.demo.model.EmailConcurrency;
-import com.helper.work.courses.concurrency.demo.model.UserConcurrency;
+import com.helper.work.courses.completablefuture.demo.model.EmailConcurrency;
+import com.helper.work.courses.completablefuture.demo.model.UserConcurrency;
 
 import java.util.Arrays;
 import java.util.List;

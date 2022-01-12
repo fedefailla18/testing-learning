@@ -1,12 +1,12 @@
-package com.helper.work.courses.concurrency.demo.model;
+package com.helper.work.courses.completablefuture.demo.model;
 
-public class UserConcurrency {
+public class EmailConcurrency {
 
     private Long id;
 
     private String name;
 
-    public UserConcurrency(Long id) {
+    public EmailConcurrency(Long id) {
         this.id = id;
     }
 

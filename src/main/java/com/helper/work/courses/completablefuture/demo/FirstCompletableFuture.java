@@ -1,4 +1,4 @@
-package com.helper.work.courses.concurrency.demo;
+package com.helper.work.courses.completablefuture.demo;
 
 import java.time.Instant;
 import java.util.concurrent.CompletableFuture;

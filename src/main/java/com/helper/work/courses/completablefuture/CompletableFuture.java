@@ -1,4 +1,4 @@
-package com.helper.work.courses.concurrency;
+package com.helper.work.courses.completablefuture;
 
 import java.util.concurrent.*;
 import java.util.function.Supplier;

@@ -1,6 +1,6 @@
-package com.helper.work.courses.concurrency.demo;
+package com.helper.work.courses.completablefuture.demo;
 
-import com.helper.work.courses.concurrency.demo.model.UserConcurrency;
+import com.helper.work.courses.completablefuture.demo.model.UserConcurrency;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -9,7 +9,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
-import static com.helper.work.courses.concurrency.demo.AsyncExample.sleep;
+import static com.helper.work.courses.completablefuture.demo.AsyncExample.sleep;
 
 /**
  * Dealing with Exception in the CompletionStage Pipeline
