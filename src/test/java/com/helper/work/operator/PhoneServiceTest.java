@@ -37,10 +37,12 @@ public class PhoneServiceTest {
         final List<Phone> list = phoneService.list();
         assertEquals(list.size(), 1);
     }
+
     @Test
     public void supplierWithOptional(){
         Supplier<Double> doubleSupplier = () -> Math.random();
         Optional<Double> optionalDouble = Optional.empty();
         System.out.println(optionalDouble.orElseGet(doubleSupplier));
     }
+
 }
